@@ -13,7 +13,7 @@ body {
     background-image: url('img/left.png'), url('img/right.png');
     background-repeat: repeat-y, repeat-y;
     background-position: left calc(100% - 992px), right calc(100% - 992px);
-    background-size: 30px 93px, 30px 93px;
+    background-size: 2.26% auto, 2.26% auto;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0;
