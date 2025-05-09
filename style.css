@@ -1,0 +1,318 @@
+body {
+    font-family: Georgia, sans-serif;
+    background-image: url('img/texture.png');
+    background-repeat: repeat;
+    background-size: auto; /* или cover, если нужно растянуть */
+    
+    margin: 0;
+  padding: 0;
+   }
+
+   .frame-container {
+    
+    background-image: url('img/left.png'), url('img/right.png');
+    background-repeat: repeat-y, repeat-y;
+    background-position: left calc(100% - 992px), right calc(100% - 992px);
+    background-size: 30px 93px, 30px 93px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    padding-top: 0;
+
+}
+
+  
+  
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+    gap: 10px; /* расстояние между элементами */
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+ 
+
+  }
+  
+  .item {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Nautilus Pompilius', sans-serif;
+    border: 5px ridge #2c5d64;
+    box-shadow: inset 0 0 15px #47858f;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+  height: 200px;
+  }
+  
+  .item-number {
+    font-size: 30px;
+    color: #2c5d64; /* яркий цвет цифры */
+    font-weight: bold;
+  }
+  
+  .item-title {
+    font-size: 27px;
+    color: #2c5d64;
+    font-weight: bold;
+  }
+  
+  .item-link {
+    color: #422a12;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .item-link:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+header {
+  
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;   /* убрать внешний отступ */
+    padding: 0;  /* убрать внутренний отступ */
+    border: none;
+  }
+
+
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: #422a12; /* Коричневый супер */
+    margin: 0;   /* убрать внешний отступ */
+    font-family: 'Nautilus Pompilius', sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+   
+    text-align: center;
+    color: #2c5d64; /* Синий супер */
+    font-family: 'Nautilus Pompilius', sans-serif;
+}
+
+.lesson-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.lesson-list li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.lesson-list a {
+    text-decoration: none;
+    color: #422a12; /* Золотой для ссылок */
+    font-weight: bold;
+    font-family: 'Nautilus Pompilius', sans-serif;
+}
+
+.lesson-list a:hover {
+    color: #c18541; /* Бронзовый оттенок при наведении */
+}
+
+.content {
+    
+    margin-top: 20px; /* Отступ сверху */
+    padding: 20px; /* внутренний отступ — 20 пикселей от краёв контейнера до его содержимого */
+    background-color: transparent; /* Без фона */
+    border-radius: 8px; /* Делает скруглённые углы с радиусом 8 пикселей*/
+    
+}
+
+table {
+    width: 100%; /* Задаём ширину таблицы */
+    margin-top: 30px; /* Добавляет отступ сверху таблицы — 30 пикселей */
+    border-collapse: collapse; /* Убираем расстояние между ячейками (Без этого свойства браузер будет рисовать двойные линии между ячейками)*/
+    text-align: center; /* Центрирует текст внутри таблицы, действует на содержимое table, но его могут переопределить стили td и th. */
+}
+
+table, th, td {
+    border: 1px solid #74622a6c; /* Золотая рамка */
+}
+
+td {
+    padding: 10px; /* Отступы внутри ячеек */
+    background-color: transparent; /* Без фона */
+    width: 4.76%; /* Ячейки занимают равную ширину */
+    vertical-align: middle; /* Вертикальное выравнивание по центру */
+    text-align: center;     /* Горизонтальное выравнивание по центру */
+}
+
+
+td:lang(ru) {
+    font-size: 1.2em; /* Обычный шрифт для русского текста */
+    font-family: 'Times New Roman', sans-serif;
+    
+}
+
+td:lang(ar) {
+    font-size: 2.5em; /* Крупный шрифт для арабского текста */
+    font-family: 'Times New Roman', serif; /* Красивый арабский шрифт */
+    direction: rtl; /* направление письма справа налево */
+    
+}
+
+
+td.left {
+    text-align: left;
+  }
+  td.right {
+    text-align: right;
+  }
+
+
+button[lang="ar"] {
+    font-family: 'Times New Roman', sans-serif; /* укажи поддерживающие арабский шрифты */
+    font-size: 2em; /* сделай шрифт крупнее, если нужно */
+    direction: rtl; /* направление письма справа налево */
+   
+    color: #2f3e46; /* Тёмный коричневый для текста */
+    
+      background-color: transparent; /* Без фона */
+      border: 2px solid #e4c28d;
+    
+      border-radius: 12px;
+      z-index: 1;
+}
+
+button:hover {
+    transform: scale(1.7); /* Увеличение кнопок при наведении */
+}
+
+
+.image-btn {
+    width: 50px; /* Размеры изображений для кнопок */
+    height: 50px;
+    border: none;
+    background-color: transparent; /* Без фона */
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Плавный переход при изменении состояния */
+}
+
+.image-btn img {
+    width: 100%; /* Изображение растягивается по размеру кнопки */
+    height: 100%;
+    
+}
+
+.image-btn:hover img {
+    opacity: 1.7; /* Уменьшаем яркость изображения при наведении */
+    transform: scale(1.5); /* Увеличиваем изображение при наведении */
+}
+
+.image-cell {
+    width: 50px; /* Уменьшенные размеры изображений в таблице */
+    height: 50px;
+    background-color: #fff;
+    overflow: hidden; /* Обрезка лишней части изображения, если оно выходит за пределы ячейки */
+    display: flex;    /* Для выравнивания содержимого по центру */
+    justify-content: center; /* Центрируем изображение по горизонтали */
+    align-items: center; /* Центрируем изображение по вертикали */
+}
+
+.footer {
+    position: relative;
+    z-index: 10; /* Делает футер выше других элементов */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .footer-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .footer-content {
+    position: absolute;
+    top: 3%; /* По центру по вертикали */
+    left: 15%; /* По центру по горизонтали */
+    transform: translate(-10%, -10%);
+    text-align: center;
+    color: #06281b; /* или другой цвет, подходящий под фон */
+    font-size: 25px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .footer-content2 {
+    position: absolute;
+    top: 84%; /* По центру по вертикали */
+    left: 47%; /* По центру по горизонтали */
+    transform: translate(-40%, -40%);
+    text-align: center;
+    font-family: 'sans-serif';
+    line-height: 1.4;
+    color: #06281b; /* или другой цвет, подходящий под фон */
+    font-size: 22px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+
+  .footer-content a {
+    color: #06281b;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+
+
+
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+  
+
+  @font-face {
+    font-family: 'Nautilus Pompilius';
+    src: url('fonts/NautilusPompilius.woff2') format('woff2'),
+        url('fonts/NautilusPompilius.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pehlevi';
+    src: url('fonts/Pehlevi-Regular.woff2') format('woff2'),
+        url('fonts/Pehlevi-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DS Arabic';
+    src: url('fonts/DSArabic.woff2') format('woff2'),
+        url('fonts/DSArabic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
